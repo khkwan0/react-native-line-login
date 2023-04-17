@@ -1,18 +1,20 @@
 import * as React from 'react';
 
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'react-native-line-login';
+import { Button, StyleSheet, View } from 'react-native';
+import Line from 'react-native-line-login';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  async function HandleLogin() {
+    try {
+      const res = await Line.Login();
+      console.log(res);
+    } catch (e) {
+      console.log(e);
+    }
+  }
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button title="login" onPress={() => HandleLogin()} />
     </View>
   );
 }

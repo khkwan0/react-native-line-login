@@ -74,6 +74,9 @@ dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
   implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+  implementation "com.linecorp.linesdk:linesdk:5.8.1"
+  implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+  implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.5.1")
 }
 
 if (isNewArchitectureEnabled()) {

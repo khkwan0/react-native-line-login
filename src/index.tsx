@@ -17,6 +17,14 @@ const LineLogin = NativeModules.LineLogin
       }
     );
 
+/*
 export function multiply(a: number, b: number): Promise<number> {
   return LineLogin.multiply(a, b);
+}
+*/
+
+export default {
+  Login(args = {}) {
+    return LineLogin.login(args);
+  },
 }

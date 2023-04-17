@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReactNativeLineLogin</string>
+    <string name="line_channel_id"></string>
+</resources>
