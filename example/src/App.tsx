@@ -6,7 +6,7 @@ import Line from 'react-native-line-login';
 export default function App() {
   async function HandleLogin() {
     try {
-      const res = await Line.Login();
+      const res = await Line.Multiply(3, 7);
       console.log(res);
     } catch (e) {
       console.log(e);

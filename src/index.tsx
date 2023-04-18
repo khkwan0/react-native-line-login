@@ -27,4 +27,7 @@ export default {
   Login(args = {}) {
     return LineLogin.login(args);
   },
-}
+  Multiply(a: number, b: number) {
+    return LineLogin.multiply(a, b);
+  },
+};
