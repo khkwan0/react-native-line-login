@@ -1,6 +1,10 @@
 # react-native-line-login
 
-asd
+A react native wrapper for the line sdk login and access token functionality.  This module wraps:
+https://github.com/line/line-sdk-android
+
+The code that bridges has been lifted from:
+https://github.com/xmartlabs/react-native-line
 
 ## Installation
 
@@ -11,11 +15,11 @@ npm install react-native-line-login
 ## Usage
 
 ```js
-import { multiply } from 'react-native-line-login';
+import LineLogin from 'react-native-line-login';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await LineLogin()
 ```
 
 ## Contributing
